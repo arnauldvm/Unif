@@ -7,3 +7,7 @@ Do not commit your personal/local settings (.vscode) if you want to share your c
 
 Isolate environment of each project with `virtualenv`
 -> https://virtualenv.pypa.io/en/latest/userguide/#usage
+
+Use requirements.txt to define dependencies (i.e. required non core modules)
+of each project (cf `pip` command)
+-> https://pip.pypa.io/en/stable/user_guide/#requirements-files
