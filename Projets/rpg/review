@@ -14,3 +14,6 @@ of each project (cf `pip` command)
 
 Make your script executable (`chmod +x ...`) and use shebang notation to select correct python interpreter version
 -> https://fr.wikipedia.org/wiki/Shebang#Portabilit%C3%A9_2
+
+Use modules (1 file per concept)
+-> https://docs.python.org/fr/3/tutorial/modules.html
