@@ -135,15 +135,10 @@ def create_field():
     tile = {}
     with open("maps/map_1/maps.csv") as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=",")
-        liste_field = list(csv_reader)
-        width = len(liste_field[1])
-        height = len(liste_field)
-
-
-    with open("maps/map_1/maps.csv") as csv_file:
-        csv_reader = csv.reader(csv_file, delimiter=",")
         line_count = 0
         for row in csv_reader:
+            if line_count==0:
+                width = len(row)
             tile_count = 0
             tile = {}
 
@@ -153,6 +148,7 @@ def create_field():
             
             field[line_count] = tile
             line_count += 1
+        height = line_count
 
         print(f"Processed {line_count} lines")
         print(f"Processed {tile_count} tiles")
