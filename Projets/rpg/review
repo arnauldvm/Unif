@@ -20,3 +20,6 @@ Use modules (1 file per concept)
 
 Use unit test framework
 -> https://docs.python.org/fr/3/library/unittest.html#basic-example
+
+Externalize the parameters to a configuration file
+-> https://docs.python.org/3/library/configparser.html
