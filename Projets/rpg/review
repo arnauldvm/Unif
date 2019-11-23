@@ -4,3 +4,6 @@ Here a few suggestions
 1 git repo per project (new release lifecycle = new repo)
 
 Do not commit your personal/local settings (.vscode) if you want to share your code
+
+Isolate environment of each project with `virtualenv`
+-> https://virtualenv.pypa.io/en/latest/userguide/#usage
