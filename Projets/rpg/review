@@ -11,3 +11,6 @@ Isolate environment of each project with `virtualenv`
 Use requirements.txt to define dependencies (i.e. required non core modules)
 of each project (cf `pip` command)
 -> https://pip.pypa.io/en/stable/user_guide/#requirements-files
+
+Make your script executable (`chmod +x ...`) and use shebang notation to select correct python interpreter version
+-> https://fr.wikipedia.org/wiki/Shebang#Portabilit%C3%A9_2
