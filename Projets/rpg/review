@@ -57,3 +57,6 @@ Externalize the parameters to a configuration file
 - `while open_game:` ...
     -> This is the event loop, put this code in a dedicated function (e.g. `event_loop`)
     -> Move in a separate module
+
+- `manage_game_keys`
+    -> This function is a bit too long, consider creating new functions for UP/DOWN/LEFT/RIGHT
