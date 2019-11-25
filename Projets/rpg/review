@@ -34,3 +34,7 @@ Externalize the parameters to a configuration file
     -> Move all in a separate module
 
 - ### GAME ### -> create `main` function
+
+- `while open_game:` ...
+    -> This is the event loop, put this code in a dedicated function (e.g. `event_loop`)
+    -> Move in a separate module
