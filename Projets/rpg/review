@@ -27,3 +27,8 @@ Externalize the parameters to a configuration file
 
 - `create_field`/`create_player`/`create_object`/`create_collide`/`create_spawn_point`
     Why open twice the same file? The first `open` block is useless.
+
+- ### Creation ###  `create_...` functions, etc.
+    All these are functions called only once to load the data.
+    -> Create a function (e.g. `initial_load`) to group all code required to load initial data.
+    -> Move all in a separate module
