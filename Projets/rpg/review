@@ -24,3 +24,6 @@ Use unit test framework
 
 Externalize the parameters to a configuration file
 -> https://docs.python.org/3/library/configparser.html
+
+- `create_field`/`create_player`/`create_object`/`create_collide`/`create_spawn_point`
+    Why open twice the same file? The first `open` block is useless.
