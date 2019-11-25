@@ -32,3 +32,5 @@ Externalize the parameters to a configuration file
     All these are functions called only once to load the data.
     -> Create a function (e.g. `initial_load`) to group all code required to load initial data.
     -> Move all in a separate module
+
+- ### GAME ### -> create `main` function
