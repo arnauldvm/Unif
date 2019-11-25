@@ -17,6 +17,7 @@ Make your script executable (`chmod +x ...`) and use shebang notation to select 
 
 Use modules (1 file per concept)
 -> https://docs.python.org/fr/3/tutorial/modules.html
+   (modules are already implicitely present: cf. sections delimited by `### ... ###` comments)
 
 Use unit test framework
 -> https://docs.python.org/fr/3/library/unittest.html#basic-example
