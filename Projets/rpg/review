@@ -1,5 +1,24 @@
+Priorities
+----------
+
+In order of importance:
+
+1- Complete the main functions of the program (minimalist)
+2- Debug
+3- Clean the code (see suggestions below)
+4- Add new functions
+
+A good way of managing the priorities:
+Make a list of all the tasks you can think of.
+This is called a "Backlog".
+Order the tasks by order of priorities.
+Then, pick one task after the other.
+Try to finish a task before switching to the next one.
+
 Here a few suggestions
 ----------------------
+
+(Note: these are not the highest priorities. See also above.)
 
 1 git repo per project (new release lifecycle = new repo)
 
