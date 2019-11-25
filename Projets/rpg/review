@@ -20,51 +20,55 @@ Here a few suggestions
 
 (Note: these are not the highest priorities. See also above.)
 
-1 git repo per project (new release lifecycle = new repo)
+(More * = more important, according to my assumptions.
+Since I do not know of the teacher evaluates the work it's hard to know what's important for him.
+Try to talk to 2d year students to have hints.)
 
-Do not commit your personal/local settings (.vscode) if you want to share your code
+** 1 git repo per project (new release lifecycle = new repo)
 
-Isolate environment of each project with `virtualenv`
+* Do not commit your personal/local settings (.vscode) if you want to share your code
+
+* Isolate environment of each project with `virtualenv`
 -> https://virtualenv.pypa.io/en/latest/userguide/#usage
 
-Use requirements.txt to define dependencies (i.e. required non core modules)
+* Use requirements.txt to define dependencies (i.e. required non core modules)
 of each project (cf `pip` command)
 -> https://pip.pypa.io/en/stable/user_guide/#requirements-files
 
-Make your script executable (`chmod +x ...`) and use shebang notation to select correct python interpreter version
+* Make your script executable (`chmod +x ...`) and use shebang notation to select correct python interpreter version
 -> https://fr.wikipedia.org/wiki/Shebang#Portabilit%C3%A9_2
 
-Use modules (1 file per concept)
+*** Use modules (1 file per concept)
 -> https://docs.python.org/fr/3/tutorial/modules.html
    (modules are already implicitely present: cf. sections delimited by `### ... ###` comments)
 
-Use unit test framework
+* Use unit test framework
 -> https://docs.python.org/fr/3/library/unittest.html#basic-example
 
-Externalize the parameters to a configuration file
+** Externalize the parameters to a configuration file
 -> https://docs.python.org/3/library/configparser.html
 
 Overall, the decomposition in function is already (very) good.
 Here are a few suggestions to improve:
 
-- `create_field`/`create_player`/`create_object`/`create_collide`/`create_spawn_point`
+- *** `create_field`/`create_player`/`create_object`/`create_collide`/`create_spawn_point`
     Why open twice the same file? The first `open` block is useless.
 
-- ### Creation ###  `create_...` functions, etc.
+- ** ### Creation ###  `create_...` functions, etc.
     All these are functions called only once to load the data.
     -> Create a function (e.g. `initial_load`) to group all code required to load initial data.
     -> Move all in a separate module
 
-- ### GAME ### -> create `main` function
+- *** ### GAME ### -> create `main` function
 
-- `while open_game:` ...
+- *** `while open_game:` ...
     -> This is the event loop, put this code in a dedicated function (e.g. `event_loop`)
     -> Move in a separate module
 
-- `manage_game_keys`
+- * `manage_game_keys`
     -> This function is a bit too long, consider creating new functions for UP/DOWN/LEFT/RIGHT
 
-- document the main workflows of the game
+- *** document the main workflows of the game
     In term of:
     - menus navigation
     - management of the state of the game (when is it saved/loaded...)
