@@ -60,3 +60,8 @@ Externalize the parameters to a configuration file
 
 - `manage_game_keys`
     -> This function is a bit too long, consider creating new functions for UP/DOWN/LEFT/RIGHT
+
+- document the main workflows of the game
+    In term of:
+    - menus navigation
+    - management of the state of the game (when is it saved/loaded...)
